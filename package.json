@@ -1,5 +1,5 @@
 {
-  "name": "@mrichforth-boilerplates/ts-playwright-boilerplate-framework",
+  "name": "@mrichforth/ts-playwright-boilerplate-framework",
   "version": "1.1.2",
   "author": "Maksym Kuznetsov",
   "license": "MIT",
@@ -11,7 +11,7 @@
   },
   "keywords": [
     "framework",
-    "npm",
+    "npm-package",
     "testing",
     "qa",
     "automation",
