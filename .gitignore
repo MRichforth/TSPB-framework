@@ -8,5 +8,7 @@ allure-report/
 .idea
 /snapshots/
 debug.spec.ts
+eslint.config.mjs
 playwright.config.ts
 test-results
+dist
