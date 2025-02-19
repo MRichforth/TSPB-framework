@@ -1,6 +1,6 @@
 {
   "name": "@mrichforth/ts-playwright-boilerplate-framework",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "author": "Maksym Kuznetsov",
   "license": "MIT",
   "description": "“Framework” project created by Maxim Kuznetsov to demonstrate the possibilities of using NPM packages to optimize and separate the executable code of a project for its further reuse in potential other projects.",
