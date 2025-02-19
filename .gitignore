@@ -1,0 +1,12 @@
+node_modules/
+/playwright-report/
+/playwright/.cache/
+.env
+artifacts/
+allure-results/
+allure-report/
+.idea
+/snapshots/
+debug.spec.ts
+playwright.config.ts
+test-results
