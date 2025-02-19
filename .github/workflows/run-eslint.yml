@@ -1,4 +1,4 @@
-name: (Docker-compose) Playwright Regression Tests
+name: Run Eslint
 
 on:
   pull_request:
