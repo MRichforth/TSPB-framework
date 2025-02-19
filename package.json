@@ -1,17 +1,22 @@
 {
   "name": "@mrichforth-boilerplates/ts-playwright-boilerplate-framework",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "author": "Maksym Kuznetsov",
   "license": "MIT",
-  "description": "",
-  "homepage": "https://github.com/MRichforth/boilerplate-framework#readme",
+  "description": "“Framework” project created by Maxim Kuznetsov to demonstrate the possibilities of using NPM packages to optimize and separate the executable code of a project for its further reuse in potential other projects.",
+  "homepage": "https://github.com/MRichforth/TS-Playwright-Boilerplate-framework#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MRichforth/boilerplate-framework.git"
+    "url": "https://github.com/MRichforth/TS-Playwright-Boilerplate-framework.git"
   },
   "keywords": [
     "framework",
-    "npm"
+    "npm",
+    "testing",
+    "qa",
+    "automation",
+    "typescript",
+    "playwright"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
