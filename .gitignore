@@ -12,5 +12,3 @@ playwright.config.ts
 test-results
 dist
 .husky
-tsconfig.json
-eslint.config.mjs
