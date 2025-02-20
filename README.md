@@ -11,7 +11,7 @@ The main goal of the “**TSPB framework**” project is to demonstrate the pote
 ***
 
 ## Technologies stack
-The following technologies were used to develop the project:
+The following technologies were used to develop the framework:
 - **Programming Language**: `TypeScript`
 - **Automation Framework**: `Playwright`
 - **Additional technologies used**:
@@ -145,7 +145,51 @@ npm run test-debug
 ```
 ***
 
-## NPM packaging
+## Package versioning
+This framework uses the creation of a custom NPM package in combination with GitHub Packages, which requires the use of semantic versioning in the [**package.json**](package.json) file for NPM packaging to work correctly
 
-## Deploy flow
-## In project usage
+For more information on semantic versioning please visit: **https://docs.npmjs.com/about-semantic-versioning**
+
+After making changes on your end to the framework project, you need to increase the patch version by `+1` in the [**package.json**](package.json) file before commiting your changes
+
+![Package version example](src/package-version-example.png)
+
+After that, execute the following command:
+
+```
+npm install
+```
+
+And ensure that the modified [**package.json**](package.json) and [**package-lock.json**](package-lock.json) files are in your branch with changes
+
+This is required for correct versioning of GH Actions by NPM package creation job.
+
+
+## NPM package deploy process
+Once your changes are in the main branch you need to create an NPM package
+
+To do this it is required to navigate to the [**Releases**](https://github.com/MRichforth/TSPB-framework/releases) section and create a new release
+
+![New Release example](src/new-release-example.png)
+
+This action will trigger the [**build-and-deploy**](https://github.com/MRichforth/TSPB-framework/actions/workflows/deploy-new-package.yml) job which will automatically create a new version of the NPM package (the version will be taken from the `version` field in the [**package.json**](package.json) file as shown [**above**](#npm-packaging)) and then the new package will be available in the **GitHub Packages** section.
+
+![Build and deploy example](src/build-and-deploy-example.png)
+
+![Github Packages example](src/github-packages-example.png)
+
+## Usage in [**TS-Playwright-Boilerplate**](https://github.com/MRichforth/TS-Playwright-Boilerplate)
+
+After release of a new version of NPM package to start using it in project [**TS-Playwright-Boilerplate**](https://github.com/MRichforth/TS-Playwright-Boilerplate) do the following:
+
+1. Update package version `@mrichforth/ts-playwright-boilerplate-framework` to the new version in [**package.json**](https://github.com/MRichforth/TS-Playwright-Boilerplate/blob/main/package.json)
+
+![NPM package example](src/npm-package-example.png)
+
+2. Execute the following command
+
+```
+npm install
+```
+
+**Done!** Changes of the new version of NPM package are now available in project [**TS-Playwright-Boilerplate**](https://github.com/MRichforth/TS-Playwright-Boilerplate)
