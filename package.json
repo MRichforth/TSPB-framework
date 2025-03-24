@@ -27,7 +27,7 @@
     "test-debug": "npx playwright test ./debug.spec.ts"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
+    "@eslint/js": "^9.23.0",
     "@playwright/test": "^1.51.1",
     "@types/node": "^22.13.10",
     "allure-playwright": "^3.2.0",
