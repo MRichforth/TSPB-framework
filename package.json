@@ -1,6 +1,6 @@
 {
   "name": "@mrichforth/ts-playwright-boilerplate-framework",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "author": "Maksym Kuznetsov",
   "license": "MIT",
   "description": "“Framework” project created by Maxim Kuznetsov to demonstrate the possibilities of using NPM packages to optimize and separate the executable code of a project for its further reuse in potential other projects.",
@@ -27,15 +27,15 @@
     "test-debug": "npx playwright test ./debug.spec.ts"
   },
   "devDependencies": {
-    "@eslint/js": "^9.25.1",
-    "@playwright/test": "^1.51.1",
-    "@types/node": "^22.14.1",
-    "allure-playwright": "^3.2.1",
-    "dotenv": "^16.4.7",
-    "eslint": "^9.25.1",
-    "globals": "^16.0.0",
+    "@eslint/js": "^9.31.0",
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.13",
+    "allure-playwright": "^3.3.0",
+    "dotenv": "^17.2.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
     "husky": "^9.1.7",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.31.0"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0"
   }
 }
